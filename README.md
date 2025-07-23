@@ -1,5 +1,5 @@
 # HainergieIF
-Le nom du jeu n'est pas une faute d'orthographe, c'est fait exprès. Projet UTBM
+Projet UTBM
 
 📌 Organisation de la base de données
 
@@ -44,3 +44,5 @@ Garde une trace des ventes et achats de ressources ou d’énergie.
 <8️⃣ Événements du jeu>
 
 -Gère l’évolution du jeu à chaque tour (mise à jour des coûts, production, demande d’énergie, exécution des contrats).
+
+Pour pouvoir tester ce projet vous devez installer apache pour avoir accès à la base de donnée
