@@ -1,0 +1,115 @@
+.body {
+    margin:0px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+    position: relative;
+}
+
+.Titrejeu {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 15vw;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.5px whitesmoke;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+    bottom: 37%;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 10px;
+}
+
+.Titrejeu::before {
+    content: "HAINERGIE";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0%;
+    height: 100%;
+    color: whitesmoke;
+    border-right: 4px solid whitesmoke;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealText 2s ease-in-out forwards;
+    filter: drop-shadow(0 0 10px whitesmoke);
+}
+
+@keyframes revealText {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.rectangle1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    border-bottom: solid seagreen 15px;
+    position: absolute;
+    box-shadow: 5px 5px 5px 5px gray;
+    top: 28%;
+    z-index: 2;
+
+
+    .title_disconnected {
+        font-family: 'Special Gothic Condensed One', sans-serif;
+        text-align:center;
+        color: darkgrey;
+    }
+    .reconnect_button {
+        background-color : seagreen;
+        width: 800px;
+        height: 50px;
+        border : none;
+        border-radius: 10px;
+        margin-top: 40px;
+        font-family: 'Special Gothic Condensed One', sans-serif;
+        color: white;
+        font-size: 35px;
+    }
+
+    .reconnect_button:hover {
+        background-color : mediumseagreen;
+        width: 800px;
+        height: 50px;
+        position: relative;
+        border : none;
+        border-radius: 10px;
+        margin-top: 40px;
+        font-family: 'Special Gothic Condensed One', sans-serif;
+        color: white;
+        font-size: 35px;
+
+    }
+}
+.rectangle2{
+    width: 100vw;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background-color: lightgrey;
+    z-index: 1;
+
+}
+
+.gameover{
+    z-index: 3;
+    margin-top: 50px;
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    color: red;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+}
